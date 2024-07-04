@@ -6,22 +6,26 @@
     <link rel="stylesheet" href="style.css">
    </head>
 <body>
-  <a href="page2.html">Создатели</a>
-  <div class="wrapper">
-    <span class="num">01</span>
-    <span class="plus">+</span>
+  <div style="top: 300px;right: 300px; margin: 0px auto; width: 1px; text-align: center; position: relative;">
+    <a href="page2.html" style="font-size: 20px;">Создатели</a>
   </div>
-  <script>
-   const plus = document.querySelector(".plus"),
-    minus = document.querySelector(".minus"),
-    num = document.querySelector(".num");
-    let a = 1;
-    plus.addEventListener("click", ()=>{
-      a++;
-      a = (a < 10) ? "0" + a : a;
-      num.innerText = a;
-    });
-  </script>
-  <img src="images/rat.png">
+  <div style="right: 570px; margin: 0px auto; width: 1px; text-align: center; position: relative;">
+    <div class="wrapper">
+      <span class="num">01</span>
+      <span class="plus">+</span>
+    </div>
+    <script>
+     const plus = document.querySelector(".plus"),
+      minus = document.querySelector(".minus"),
+      num = document.querySelector(".num");
+      let a = 1;
+      plus.addEventListener("click", ()=>{
+        a++;
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+      });
+    </script>
+    <img src="images/rat.png">
+  </div>
 </body>
 </html>
